@@ -12,6 +12,7 @@ RUN yum install -y npm
 COPY . /src
 
 
+
 # there is an issue with npm install that can be solved by this line based on this - https://github.com/npm/npm/issues/20191
 RUN npm config set strict-ssl false 
 
