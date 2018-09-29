@@ -9,9 +9,8 @@ jobs:
   test:
     docker: # use the docker executor type; machine and macos executors are also supported
       - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
-    steps:
-      - checkout
-      - run: mocha 
+    steps: 
+      - run: echo "run tests" # run the `echo` command    # used to be checkout then run: mocha
 workflows:
   version: 2
   build_and_test:
